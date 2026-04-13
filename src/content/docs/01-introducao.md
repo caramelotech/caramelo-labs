@@ -1,12 +1,11 @@
 ---
-title: "01 - Introdução"
+title: "Introdução"
 description: "O que é este laboratório, como está organizado e por onde começar."
-date: 2026-01-01
+lastUpdated: 2026-01-01
+sidebar:
+  order: 1
 tags: ["introdução", "guia"]
-draft: false
 ---
-
-# 01 - Introdução
 
 ## O que é este laboratório?
 
@@ -32,5 +31,5 @@ A ideia é simples: aprenda fazendo.
 
 ## Dica
 
-Não apenas leia — execute o código, modifique, quebre e conserte.
+Não apenas leia - execute o código, modifique, quebre e conserte.
 Aprendizado real acontece na prática.

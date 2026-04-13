@@ -2,16 +2,18 @@
 
 Obrigado por querer contribuir com este repositório da Caramelo Tech!
 
-## O que pode ser contribuido
+## O que pode ser contribuído
 
-- Melhorias e correções nas anotações (`/notes`)
-- Novos exemplos em `/examples`
-- Exercícios adicionais em `/exercises`
-- Projetos práticos em `/projects`
+- Novas anotações em `src/content/docs/`
+- Novos exemplos em `examples/`
+- Exercícios adicionais em `exercises/`
+- Projetos práticos em `projects/`
+- Melhorias na configuração do site (Astro/Starlight)
 
 ## Processo
 
 1. Crie uma branch a partir de `main` seguindo o padrão:
+
    ```
    feature/descricao-curta
    fix/descricao-curta
@@ -19,10 +21,11 @@ Obrigado por querer contribuir com este repositório da Caramelo Tech!
    ```
 
 2. Faça commits atômicos com mensagens no padrão de Conventional Commits:
+
    ```
-   feat: adicionar exercícios de loops
+   feat: adicionar notas sobre loops
    fix: corrigir exemplo de recursão
-   docs: melhorar anotações sobre funções
+   docs: melhorar anotação sobre funções
    ```
 
    Tipos válidos: `feat`, `fix`, `docs`, `style`, `refactor`, `chore`
@@ -33,24 +36,47 @@ Obrigado por querer contribuir com este repositório da Caramelo Tech!
 
 ## Padrões de conteúdo
 
-### Anotações (Markdown)
+### Anotações (`src/content/docs/`)
+
+Cada arquivo `.md` deve ter o seguinte frontmatter:
+
+```yaml
+---
+title: "Título da nota"
+description: "Descrição breve exibida no site e no SEO"
+lastUpdated: 2026-01-01
+sidebar:
+  order: 1 # controla a ordem no sidebar
+tags: ["tag1", "tag2"]
+---
+```
+
+Outras diretrizes:
 
 - Escreva em português
-- Use títulos hierárquicos (`##`, `###`)
+- Use títulos hierárquicos (`##`, `###`) - não repita o `title` como `h1`
 - Prefira exemplos curtos e diretos
 - Inclua o "por quê", não apenas o "como"
+- Para agrupar por tema, use subpastas dentro de `src/content/docs/`
 
-### Exemplos de código
+### Exemplos de código (`examples/`)
 
 - Um conceito por arquivo
-- Nomeie o arquivo de forma descritiva (`exemplo-loop-for.js`, não `exemplo1.js`)
+- Nomeie o arquivo de forma descritiva (`loop-for.js`, não `exemplo1.js`)
 - Inclua um comentário no topo explicando o que o exemplo demonstra
 
-### Exercícios
+### Exercícios (`exercises/`)
 
 - Descreva claramente o objetivo
 - Indique o nível de dificuldade (iniciante / intermediário / avançado)
 - Inclua exemplos de entrada e saída esperada quando aplicável
+
+## Rodando o site localmente
+
+```bash
+npm install
+npm run dev   # localhost:4321
+```
 
 ## Dúvidas?
 

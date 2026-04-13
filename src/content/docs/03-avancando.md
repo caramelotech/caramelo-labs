@@ -1,12 +1,11 @@
 ---
-title: "03 - Avançando"
+title: "Avançando"
 description: "Modularização, tratamento de erros, testes e boas práticas para escrever código mais robusto e sustentável."
-date: 2026-01-15
+lastUpdated: 2026-01-15
+sidebar:
+  order: 3
 tags: ["modularização", "testes", "boas-práticas"]
-draft: false
 ---
-
-# 03 - Avançando
 
 ## Indo além do básico
 
