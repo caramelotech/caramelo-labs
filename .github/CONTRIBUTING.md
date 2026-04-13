@@ -6,8 +6,8 @@ Obrigado por querer contribuir com este repositório da Caramelo Tech!
 
 - Novas anotações em `src/content/docs/`
 - Novos exemplos em `examples/`
-- Exercícios adicionais em `exercises/`
-- Projetos práticos em `projects/`
+- Exercícios adicionais em `examples/exercises.md`
+- Projetos práticos em `examples/projects.md`
 - Melhorias na configuração do site (Astro/Starlight)
 
 ## Processo
@@ -65,7 +65,7 @@ Outras diretrizes:
 - Nomeie o arquivo de forma descritiva (`loop-for.js`, não `exemplo1.js`)
 - Inclua um comentário no topo explicando o que o exemplo demonstra
 
-### Exercícios (`exercises/`)
+### Exercícios (`examples/exercises.md`)
 
 - Descreva claramente o objetivo
 - Indique o nível de dificuldade (iniciante / intermediário / avançado)

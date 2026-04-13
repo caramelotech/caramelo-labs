@@ -15,19 +15,19 @@ A ideia é simples: aprenda fazendo.
 
 ## Como está organizado
 
-| Diretório    | Conteúdo                   |
-| ------------ | -------------------------- |
-| `/notes`     | Anotações e conceitos      |
-| `/examples`  | Exemplos de código prontos |
-| `/exercises` | Exercícios para praticar   |
-| `/projects`  | Projetos para construir    |
+| Diretório           | Conteúdo                            |
+| ------------------- | ----------------------------------- |
+| `/src/content/docs` | Anotações e conceitos               |
+| `/examples`         | Exemplos de código prontos          |
+| `/examples/exercises.md` | Exercícios para praticar       |
+| `/examples/projects.md`  | Projetos para construir        |
 
 ## Por onde começar
 
 1. Leia estas anotações em ordem
 2. Veja os exemplos em `/examples`
-3. Resolva os exercícios em `/exercises`
-4. Monte os projetos em `/projects`
+3. Resolva os exercícios em `/examples/exercises.md`
+4. Monte os projetos em `/examples/projects.md`
 
 ## Dica
 

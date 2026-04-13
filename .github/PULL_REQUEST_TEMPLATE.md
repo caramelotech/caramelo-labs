@@ -6,8 +6,8 @@
 
 - [ ] Nova anotação (`src/content/docs/`)
 - [ ] Novo exemplo (`examples/`)
-- [ ] Novo exercício (`exercises/`)
-- [ ] Novo projeto (`projects/`)
+- [ ] Novo exercício (`examples/exercises.md`)
+- [ ] Novo projeto (`examples/projects.md`)
 - [ ] Correção de conteúdo existente
 - [ ] Melhoria no site (Astro/Starlight)
 - [ ] Outro: <!-- descreva -->

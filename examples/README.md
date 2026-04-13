@@ -1,21 +1,27 @@
-# Exemplos
+# Examples
 
-Exemplos práticos e prontos para executar.
+Exemplos, exercícios e projetos práticos.
 
-## Como usar
+## Arquivos
+
+| Arquivo          | Descrição                              |
+| ---------------- | -------------------------------------- |
+| `README.md`      | Este índice                            |
+| `exercises.md`   | Exercícios para praticar               |
+| `projects.md`    | Mini projetos para aplicar o aprendido |
+
+## Exemplos de código
+
+Exemplos prontos para executar.
+
+### Como usar
 
 1. Escolha um exemplo
 2. Leia o código e os comentários
 3. Execute
 4. Modifique e experimente
 
-## Lista de exemplos
-
-| Arquivo          | Descrição              |
-| ---------------- | ---------------------- |
-| `hello-world.md` | Exemplo básico inicial |
-
-## hello-world
+### hello-world
 
 O exemplo mais simples possível: exibir uma mensagem na tela.
 

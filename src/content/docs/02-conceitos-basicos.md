@@ -49,4 +49,4 @@ Organizam e armazenam coleções de valores.
 
 ## Próximo passo
 
-Veja os exemplos em `/examples` para ver esses conceitos na prática.
+Veja os exemplos em `/examples` para ver esses conceitos na prática. Depois, pratique com os exercícios em `/examples/exercises.md`.

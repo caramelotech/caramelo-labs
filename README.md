@@ -13,17 +13,15 @@ Laboratório prático da **Caramelo Tech** com foco em aprendizado hands-on atra
 
 ```
 src/content/docs/   → Anotações e estudos (publicadas no site)
-examples/           → Exemplos simples de código
-exercises/          → Exercícios propostos
-projects/           → Projetos práticos
+examples/           → Exemplos de código, exercícios e projetos práticos
 ```
 
 ## Como usar
 
 1. Comece pelas anotações em `src/content/docs/`
 2. Explore os exemplos em `examples/`
-3. Resolva os exercícios em `exercises/`
-4. Construa os projetos em `projects/`
+3. Resolva os exercícios em `examples/exercises.md`
+4. Construa os projetos em `examples/projects.md`
 
 ## Visualização
 

@@ -47,5 +47,5 @@ Valide que o código faz o que deveria.
 
 ## Próximo passo
 
-Aplique esses conceitos nos projetos em `/projects`.
+Aplique esses conceitos nos projetos em `/examples/projects.md`.
 É construindo que o aprendizado se consolida.
