@@ -12,6 +12,7 @@ Aqui você vai encontrar os blocos de construção essenciais.
 Armazenam valores que podem ser usados e manipulados no código.
 
 Exemplos comuns:
+
 - Inteiros (`int`) → números sem casas decimais
 - Texto (`string`) → sequências de caracteres
 - Booleanos (`bool`) → `true` ou `false`

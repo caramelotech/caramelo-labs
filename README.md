@@ -4,10 +4,10 @@ Laboratório prático da **Caramelo Tech** com foco em aprendizado hands-on atra
 
 ## 📚 O que você vai encontrar
 
-* 📖 Anotações em Markdown
-* 💻 Exemplos de código
-* 🧪 Exercícios práticos
-* 🚀 Mini projetos
+- 📖 Anotações em Markdown
+- 💻 Exemplos de código
+- 🧪 Exercícios práticos
+- 🚀 Mini projetos
 
 ## 🗂 Estrutura do repositório
 
@@ -41,10 +41,10 @@ Aqui você não apenas lê — você constrói.
 
 Contribuições são bem-vindas!
 
-* Melhorias nas anotações
-* Novos exemplos
-* Exercícios adicionais
-* Projetos
+- Melhorias nas anotações
+- Novos exemplos
+- Exercícios adicionais
+- Projetos
 
 ## 📌 Licença
 

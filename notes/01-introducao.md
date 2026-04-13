@@ -8,12 +8,12 @@ A ideia é simples: aprenda fazendo.
 
 ## Como está organizado
 
-| Diretório    | Conteúdo                        |
-|--------------|---------------------------------|
-| `/notes`     | Anotações e conceitos           |
-| `/examples`  | Exemplos de código prontos      |
-| `/exercises` | Exercícios para praticar        |
-| `/projects`  | Projetos para construir         |
+| Diretório    | Conteúdo                   |
+| ------------ | -------------------------- |
+| `/notes`     | Anotações e conceitos      |
+| `/examples`  | Exemplos de código prontos |
+| `/exercises` | Exercícios para praticar   |
+| `/projects`  | Projetos para construir    |
 
 ## Por onde começar
 
