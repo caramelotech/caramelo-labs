@@ -1,3 +1,11 @@
+---
+title: "01 - Introdução"
+description: "O que é este laboratório, como está organizado e por onde começar."
+date: 2026-01-01
+tags: ["introdução", "guia"]
+draft: false
+---
+
 # 01 - Introdução
 
 ## O que é este laboratório?

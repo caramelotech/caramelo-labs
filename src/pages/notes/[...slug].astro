@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('notes', ({ data }) => !data.draft);
+  return notes.map((note) => ({
+    params: { slug: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('pt-BR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+<ArticleLayout title={note.data.title} description={note.data.description}>
+  <div class="article-header">
+    <a href={`${base}/`} class="back-link">← Todos os artigos</a>
+    <h1>{note.data.title}</h1>
+    <div class="article-meta">
+      <time datetime={note.data.date.toISOString()}>
+        {formatDate(note.data.date)}
+      </time>
+      {note.data.tags.length > 0 && (
+        <div class="article-tags">
+          {note.data.tags.map((tag) => (
+            <a href={`${base}/tags/${tag}`} class="tag">{tag}</a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+
+  <div class="article-content">
+    <Content />
+  </div>
+</ArticleLayout>

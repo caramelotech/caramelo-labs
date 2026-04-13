@@ -1,3 +1,11 @@
+---
+title: "02 - Conceitos Básicos"
+description: "Variáveis, tipos de dados, estruturas de controle, funções e estruturas de dados - os blocos essenciais de qualquer programa."
+date: 2026-01-08
+tags: ["fundamentos", "variáveis", "funções"]
+draft: false
+---
+
 # 02 - Conceitos Básicos
 
 ## Fundamentos

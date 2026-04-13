@@ -1,0 +1,107 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const allNotes = await getCollection('notes', ({ data }) => !data.draft);
+const sorted = allNotes.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allTags = [...new Set(sorted.flatMap((n) => n.data.tags))].sort();
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('pt-BR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+<BaseLayout title="Caramelo Labs - Artigos">
+  <section class="hero">
+    <h1>Artigos</h1>
+    <p>Notas e conceitos do laboratório de aprendizado.</p>
+  </section>
+
+  <div class="search-bar">
+    <input
+      type="search"
+      id="search-input"
+      placeholder="Buscar por título..."
+      autocomplete="off"
+    />
+  </div>
+
+  {allTags.length > 0 && (
+    <div class="tag-filter" id="tag-filter">
+      <button class="tag-btn active" data-tag="all">Todos</button>
+      {allTags.map((tag) => (
+        <button class="tag-btn" data-tag={tag}>{tag}</button>
+      ))}
+    </div>
+  )}
+
+  {sorted.length > 0 ? (
+    <div class="articles-grid" id="articles-grid">
+      {sorted.map((note) => (
+        <article class="card" data-tags={note.data.tags.join(',')} data-title={note.data.title.toLowerCase()}>
+          <a href={`${base}/notes/${note.id}`} class="card-link">
+            <div class="card-content">
+              {note.data.tags.length > 0 && (
+                <div class="card-tags">
+                  {note.data.tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+              <h2 class="card-title">{note.data.title}</h2>
+              <p class="card-description">{note.data.description}</p>
+              <time class="card-date" datetime={note.data.date.toISOString()}>
+                {formatDate(note.data.date)}
+              </time>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  ) : (
+    <div class="empty">
+      <p>Nenhum artigo publicado ainda.</p>
+    </div>
+  )}
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('#tag-filter .tag-btn');
+  const cards = document.querySelectorAll<HTMLElement>('#articles-grid .card');
+  const searchInput = document.querySelector<HTMLInputElement>('#search-input');
+
+  let activeTag = 'all';
+  let searchQuery = '';
+
+  function applyFilters() {
+    cards.forEach((card) => {
+      const title = card.dataset.title ?? '';
+      const tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+
+      const matchesTag = activeTag === 'all' || tags.includes(activeTag);
+      const matchesSearch = title.includes(searchQuery);
+
+      card.style.display = matchesTag && matchesSearch ? '' : 'none';
+    });
+  }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      activeTag = btn.dataset.tag!;
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener('input', () => {
+    searchQuery = searchInput.value.toLowerCase().trim();
+    applyFilters();
+  });
+</script>
