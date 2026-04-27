@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
 /* -------------------------------------------------------
-   Dark theme - baseado em caramelotech.github.io
+   Dark theme
    bg:      hsl(30 15% 8%)   →  --sl-color-black
    surface: hsl(30 12% 12%)  →  --sl-color-gray-6
    accent:  hsl(40 90% 55%)  →  --sl-color-accent
@@ -21,7 +21,7 @@
 }
 
 /* -------------------------------------------------------
-   Light theme - baseado em caramelotech.github.io (.light)
+   Light theme
    bg:      hsl(40 30% 96%)  →  --sl-color-black (invertido)
    text:    hsl(30 15% 12%)  →  --sl-color-white (invertido)
    accent:  hsl(40 90% 45%)

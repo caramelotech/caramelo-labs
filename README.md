@@ -27,7 +27,7 @@ examples/           → Exemplos de código, exercícios e projetos práticos
 
 As anotações são publicadas via GitHub Pages com o tema Starlight (Astro).
 
-Acesse: https://caramelotech.github.io/caramelo-labs
+Acesse: https://caramelotech.com.br/caramelo-labs
 
 ## Rodando localmente
 
